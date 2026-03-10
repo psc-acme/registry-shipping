@@ -1,0 +1,42 @@
+{
+    "name": "psc-acme/registry-shipping",
+    "description": "Package registry-shipping for psc-acme organization",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Philipp Scheit",
+            "email": "p.scheit@packagist.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "PscAcme\\RegistryShipping\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=8.3",
+        "symfony/event-dispatcher": "^7.0",
+        "webmozart/assert": "^1.0",
+        "aws/aws-sdk-php": "^3.332",
+        "psr/log": "^3.0",
+        "symfony/serializer": "^7.0",
+        "nikic/php-parser": "^5.0"
+    },
+    "require-dev": {
+        "mockery/mockery": "^1.6",
+        "fakerphp/faker": "^1.0",
+        "phpunit/phpunit": "^10.5"
+    },
+    "minimum-stability": "stable",
+    "config": {
+        "secure-http": false
+    },
+    "repositories": {
+        "private-packagist": {
+            "type": "composer",
+            "url": "http://repo.packagist.com.lo/psc-acme/"
+        },
+        "packagist.org": false
+    }
+}
